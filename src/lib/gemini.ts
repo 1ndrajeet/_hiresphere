@@ -4,7 +4,7 @@ export interface Step {
     link?: string;
   }
   
-  export const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent";
+  export const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent";
   export const GEMINI_API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY || '';
   
   export async function generateRoadmap(title: string, year: string): Promise<Step[]> {
